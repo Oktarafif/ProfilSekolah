@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/eskulFragment">
+
+    <fragment
+        android:id="@+id/eskulFragment"
+        android:name="id.rafif.profilsekolah.fragment.EskulFragment"
+        android:label="fragment_eskul"
+        tools:layout="@layout/fragment_eskul" />
+    <fragment
+        android:id="@+id/founderragment"
+        android:name="id.rafif.profilsekolah.fragment.Founderragment"
+        android:label="fragment_founderragment"
+        tools:layout="@layout/fragment_founder" />
+    <fragment
+        android:id="@+id/galeriFragment"
+        android:name="id.rafif.profilsekolah.fragment.GaleriFragment"
+        android:label="fragment_galeri"
+        tools:layout="@layout/fragment_galeri" />
+    <fragment
+        android:id="@+id/prestasiFragment"
+        android:name="id.rafif.profilsekolah.fragment.PrestasiFragment"
+        android:label="fragment_prestasi"
+        tools:layout="@layout/fragment_prestasi" />
+    <fragment
+        android:id="@+id/sekolahFragment"
+        android:name="id.rafif.profilsekolah.fragment.SekolahFragment"
+        android:label="fragment_sekolah"
+        tools:layout="@layout/fragment_sekolah" />
+</navigation>

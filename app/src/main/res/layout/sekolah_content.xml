@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/prestasi_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Judul"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_npsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NPSN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@+id/prestasi_title" />
+
+    <TextView
+        android:id="@+id/desc_npsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NPSN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_npsn" />
+
+    <TextView
+        android:id="@+id/txt_alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Alamat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/desc_npsn" />
+
+    <TextView
+        android:id="@+id/desc_alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Alamatnya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_alamat" />
+
+    <TextView
+        android:id="@+id/txt_telp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Telepon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/desc_alamat" />
+
+    <TextView
+        android:id="@+id/desc_alamat2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Teleponya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_telp" />
+
+    <TextView
+        android:id="@+id/txt_web"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Website"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/desc_alamat2" />
+
+    <TextView
+        android:id="@+id/desc_web"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Websitenya"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/txt_web" />
+
+    <TextView
+        android:id="@+id/txt_sosmed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sosmed"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/prestasi_title"
+        app:layout_constraintStart_toStartOf="@+id/prestasi_title"
+        app:layout_constraintTop_toBottomOf="@id/desc_web" />
+
+    <ImageView
+        android:id="@+id/img_ig"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_sosmed"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sosmed"
+        app:srcCompat="@drawable/ic_icons8_instagram" />
+
+    <ImageView
+        android:id="@+id/img_fb"
+        android:layout_width="52dp"
+        android:layout_height="49dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_ig"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/img_ig"
+        app:layout_constraintTop_toBottomOf="@+id/img_ig"
+        app:srcCompat="@drawable/ic_icons8_facebook" />
+
+    <TextView
+        android:id="@+id/txt_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="fb.com/smk.idn"
+        app:layout_constraintBottom_toBottomOf="@+id/img_fb"
+        app:layout_constraintStart_toEndOf="@+id/img_fb" />
+
+    <TextView
+        android:id="@+id/txt_ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="instagram.com/smp.smk.idn"
+        app:layout_constraintBottom_toBottomOf="@+id/img_ig"
+        app:layout_constraintStart_toEndOf="@+id/img_ig" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
